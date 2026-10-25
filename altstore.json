@@ -29,32 +29,42 @@
           "height": 750
         }
       ],
-      "version": "1.5.1",
-      "versionDate": "2026-10-20T19:09:36Z",
-      "versionDescription": "## Fixes\r\n\r\n- **Android: search no longer fails on some phones.** On some networks, YouTube rejected the app's search requests, and the app only showed \"Search is unavailable right now\". The Android app now talks to YouTube the same way the desktop app does, and it tries a second way to search when the first one fails.\r\n- If search ever fails anyway, the message now says what YouTube answered (for example \"HTTP 403\"). Please include it when reporting a problem.\r\n\r\n## Downloads\r\n\r\n- **Windows:** `Musike-Setup-1.5.1-Windows.exe`\r\n- **macOS:** `Musike-Setup-1.5.1-macOS-arm64.dmg` (Apple Silicon) or `-macOS-x64.dmg` (Intel)\r\n- **Linux:** `.deb` or `.AppImage`, each for `x64` and `arm64`\r\n- **Android and Android TV:** `Musike-Setup-1.5.1-Android.apk`\r\n- **iPhone:** `Musike-Setup-1.5.1-iOS.ipa`\r\n- **Docker:** `ghcr.io/ernani1234/musike:1.5.1`\r\n\r\nTo update, install over the previous version. Your playlists and favorites are kept.\r\n\r\n**Full Changelog**: https://github.com/Ernani1234/musike/compare/v1.5.0...v1.5.1",
-      "downloadURL": "https://github.com/Ernani1234/musike/releases/download/v1.5.1/Musike-Setup-1.5.1-iOS.ipa",
-      "size": 1105525,
+      "version": "1.5.3",
+      "versionDate": "2026-10-25T14:01:34Z",
+      "versionDescription": "Modded Musike for iOS — Mo's fork of [Ernani1234/musike](https://github.com/Ernani1234/musike), on the upstream v1.5.1 base.\nBuilt from `macblizzard/musike` @ b66c1f3 on GitHub's macOS runner. **Unsigned** — FlareStore/SideStore/AltStore/Sideloadly sign it with your own Apple ID on install.\n\n**1.5.3 — no more silent tail on downloaded tracks.** YouTube's audio streams carry silence past the end of the song. While streaming, the app already stopped at the real length reported by YouTube; a downloaded file had nothing to tell it where the song ends, so a 4-minute track showed 9 minutes with silence after the fourth. The download now records the track's length beside the audio and cuts the padding with a stream copy (no re-encode), and playback stops at the real end either way.\n\nAlso in this build:\n- offline \"Downloaded\" collection that plays with no connection (native downloader — googlevideo has no CORS headers, so the web view can never fetch the bytes itself)\n- lrclib lyrics, fetched on the device\n- audio format ladder (140 -> 139 -> 251 -> 250 -> 249): YouTube refuses individual itags per session, so a refused URL falls through to the next format instead of failing the track\n- iOS background hand-off alongside upstream's media session\n\nNative mode: the backend runs inside the app, so no server or Tailscale is needed.",
+      "downloadURL": "https://github.com/macblizzard/musike-altstore/releases/download/mod-1.5.3-b1/Musike-Mod-1.5.3-iOS-build10503.ipa",
+      "size": 1121780,
       "minOSVersion": "15.0",
       "versions": [
         {
-          "version": "1.5.1",
-          "buildVersion": "010501",
-          "date": "2026-10-20T19:09:36Z",
-          "localizedDescription": "## Fixes\r\n\r\n- **Android: search no longer fails on some phones.** On some networks, YouTube rejected the app's search requests, and the app only showed \"Search is unavailable right now\". The Android app now talks to YouTube the same way the desktop app does, and it tries a second way to search when the first one fails.\r\n- If search ever fails anyway, the message now says what YouTube answered (for example \"HTTP 403\"). Please include it when reporting a problem.\r\n\r\n## Downloads\r\n\r\n- **Windows:** `Musike-Setup-1.5.1-Windows.exe`\r\n- **macOS:** `Musike-Setup-1.5.1-macOS-arm64.dmg` (Apple Silicon) or `-macOS-x64.dmg` (Intel)\r\n- **Linux:** `.deb` or `.AppImage`, each for `x64` and `arm64`\r\n- **Android and Android TV:** `Musike-Setup-1.5.1-Android.apk`\r\n- **iPhone:** `Musike-Setup-1.5.1-iOS.ipa`\r\n- **Docker:** `ghcr.io/ernani1234/musike:1.5.1`\r\n\r\nTo update, install over the previous version. Your playlists and favorites are kept.\r\n\r\n**Full Changelog**: https://github.com/Ernani1234/musike/compare/v1.5.0...v1.5.1",
-          "downloadURL": "https://github.com/Ernani1234/musike/releases/download/v1.5.1/Musike-Setup-1.5.1-iOS.ipa",
-          "size": 1105525,
+          "version": "1.5.3",
+          "buildVersion": "10503",
+          "date": "2026-10-25T14:01:34Z",
+          "localizedDescription": "Modded Musike for iOS — Mo's fork of [Ernani1234/musike](https://github.com/Ernani1234/musike), on the upstream v1.5.1 base.\nBuilt from `macblizzard/musike` @ b66c1f3 on GitHub's macOS runner. **Unsigned** — FlareStore/SideStore/AltStore/Sideloadly sign it with your own Apple ID on install.\n\n**1.5.3 — no more silent tail on downloaded tracks.** YouTube's audio streams carry silence past the end of the song. While streaming, the app already stopped at the real length reported by YouTube; a downloaded file had nothing to tell it where the song ends, so a 4-minute track showed 9 minutes with silence after the fourth. The download now records the track's length beside the audio and cuts the padding with a stream copy (no re-encode), and playback stops at the real end either way.\n\nAlso in this build:\n- offline \"Downloaded\" collection that plays with no connection (native downloader — googlevideo has no CORS headers, so the web view can never fetch the bytes itself)\n- lrclib lyrics, fetched on the device\n- audio format ladder (140 -> 139 -> 251 -> 250 -> 249): YouTube refuses individual itags per session, so a refused URL falls through to the next format instead of failing the track\n- iOS background hand-off alongside upstream's media session\n\nNative mode: the backend runs inside the app, so no server or Tailscale is needed.",
+          "downloadURL": "https://github.com/macblizzard/musike-altstore/releases/download/mod-1.5.3-b1/Musike-Mod-1.5.3-iOS-build10503.ipa",
+          "size": 1121780,
           "minOSVersion": "15.0",
-          "sha256": "488e991ec264a0b335cf18ee409c856e97ce1e5213184259ea480daa5211a638"
+          "sha256": "87f14ae3f1dc326aa03d5babff6585cc7efd6b321c7e96555f9382552347addc"
         },
         {
-          "version": "1.5.0",
-          "buildVersion": "010500",
-          "date": "2026-10-20T02:29:15Z",
-          "localizedDescription": "## What's Changed\r\n* iOS app (Capacitor): platform, native resolving, native audio, lock screen by @fvaha in https://github.com/Ernani1234/musike/pull/7\r\n\r\n\r\n**Full Changelog**: https://github.com/Ernani1234/musike/compare/v1.4.2...v1.5.0",
-          "downloadURL": "https://github.com/Ernani1234/musike/releases/download/v1.5.0/Musike-Setup-1.5.0-iOS.ipa",
-          "size": 1105130,
+          "version": "1.5.2",
+          "buildVersion": "10502",
+          "date": "2026-10-25T13:38:44Z",
+          "localizedDescription": "Modded Musike for iOS — Mo's fork of [Ernani1234/musike](https://github.com/Ernani1234/musike), upstream v1.5.1 base.\nBuilt from `macblizzard/musike` @ 09b943a on GitHub's macOS runner. **Unsigned** — FlareStore/SideStore/AltStore/Sideloadly sign it with your own Apple ID on install.\n\n**1.5.2 fixes offline downloads.** googlevideo answers without CORS headers, so the web view could never fetch a track's bytes; the download now runs in the native side (URLSession -> Documents, `Range: bytes=0-` so it isn't throttled) and the player reads the file straight off disk.\n\nAlso in this build:\n- offline \"Downloaded\" collection that plays with no connection\n- lrclib lyrics, fetched on the device\n- audio format ladder (140 -> 139 -> 251 -> 250 -> 249): YouTube refuses individual itags per session, so a refused URL falls through to the next format instead of failing the track\n- iOS background hand-off alongside upstream's media session\n\nNative mode: the backend runs inside the app, so no server or Tailscale is needed.",
+          "downloadURL": "https://github.com/macblizzard/musike-altstore/releases/download/mod-1.5.2-b1/Musike-Mod-1.5.2-iOS-build10502.ipa",
+          "size": 1119566,
           "minOSVersion": "15.0",
-          "sha256": "ab8a30977467d4c18b84e69d17b8811a0a3879c0fb6acea362cf1758fe63fa3f"
+          "sha256": "dcc270a3a58d04414ff11373b7e51aeecf7e0292a9944b76f5bcea74052835bf"
+        },
+        {
+          "version": "1.5.1",
+          "buildVersion": "10501",
+          "date": "2026-10-25T13:21:18Z",
+          "localizedDescription": "Modded Musike for iOS — Mo's fork of [Ernani1234/musike](https://github.com/Ernani1234/musike) at upstream v1.5.1.\n\nBuilt from `macblizzard/musike` @ ee64f4b on GitHub's macOS runner. **Unsigned** — FlareStore/SideStore/AltStore/Sideloadly sign it with your own Apple ID on install.\n\nAdded on top of upstream 1.5.1:\n- offline \"Downloaded\" collection (audio in Cache Storage, plays with no connection)\n- lrclib lyrics, fetched on the device\n- audio format ladder (140 -> 139 -> 251 -> 250 -> 249): YouTube refuses individual itags per session, so a refused URL falls through to the next format instead of failing the track\n- iOS background hand-off kept alongside upstream's media session\n\nThe backend runs inside the app (native mode): no server or Tailscale needed.",
+          "downloadURL": "https://github.com/macblizzard/musike-altstore/releases/download/mod-1.5.1-b1/Musike-Mod-1.5.1-iOS-build10501.ipa",
+          "size": 1112053,
+          "minOSVersion": "15.0",
+          "sha256": "01367159e383c881fcaafb04983054d6958a536230758ea39ca4d6ed3b58cdd4"
         }
       ],
       "appPermissions": {
