@@ -2,7 +2,7 @@
   "name": "Musike",
   "identifier": "xyz.dnahomelab.musike.source",
   "sourceURL": "https://raw.githubusercontent.com/macblizzard/musike-altstore/main/altstore.json",
-  "schemaVersion": 2,
+  "schemaVersion": 3,
   "subtitle": "YouTube Music player — unsigned iOS builds",
   "description": "Musike is a free, open-source YouTube Music player by Ernani1234. Standalone on iPhone: no server needed. Builds are the unsigned IPAs published on the upstream release page; SideStore, AltStore, Feather and FlareStore re-sign them with your own Apple ID.",
   "iconURL": "https://raw.githubusercontent.com/Ernani1234/musike/main/mobile/ios/App/App/Assets.xcassets/AppIcon.appiconset/AppIcon-512@2x.png",
@@ -30,7 +30,7 @@
         }
       ],
       "version": "1.5.1",
-      "versionDate": "2026-10-20",
+      "versionDate": "2026-10-20T19:09:36Z",
       "versionDescription": "## Fixes\r\n\r\n- **Android: search no longer fails on some phones.** On some networks, YouTube rejected the app's search requests, and the app only showed \"Search is unavailable right now\". The Android app now talks to YouTube the same way the desktop app does, and it tries a second way to search when the first one fails.\r\n- If search ever fails anyway, the message now says what YouTube answered (for example \"HTTP 403\"). Please include it when reporting a problem.\r\n\r\n## Downloads\r\n\r\n- **Windows:** `Musike-Setup-1.5.1-Windows.exe`\r\n- **macOS:** `Musike-Setup-1.5.1-macOS-arm64.dmg` (Apple Silicon) or `-macOS-x64.dmg` (Intel)\r\n- **Linux:** `.deb` or `.AppImage`, each for `x64` and `arm64`\r\n- **Android and Android TV:** `Musike-Setup-1.5.1-Android.apk`\r\n- **iPhone:** `Musike-Setup-1.5.1-iOS.ipa`\r\n- **Docker:** `ghcr.io/ernani1234/musike:1.5.1`\r\n\r\nTo update, install over the previous version. Your playlists and favorites are kept.\r\n\r\n**Full Changelog**: https://github.com/Ernani1234/musike/compare/v1.5.0...v1.5.1",
       "downloadURL": "https://github.com/Ernani1234/musike/releases/download/v1.5.1/Musike-Setup-1.5.1-iOS.ipa",
       "size": 1105525,
@@ -39,8 +39,7 @@
         {
           "version": "1.5.1",
           "buildVersion": "010501",
-          "date": "2026-10-20",
-          "publishedAt": "2026-10-20T19:09:36Z",
+          "date": "2026-10-20T19:09:36Z",
           "localizedDescription": "## Fixes\r\n\r\n- **Android: search no longer fails on some phones.** On some networks, YouTube rejected the app's search requests, and the app only showed \"Search is unavailable right now\". The Android app now talks to YouTube the same way the desktop app does, and it tries a second way to search when the first one fails.\r\n- If search ever fails anyway, the message now says what YouTube answered (for example \"HTTP 403\"). Please include it when reporting a problem.\r\n\r\n## Downloads\r\n\r\n- **Windows:** `Musike-Setup-1.5.1-Windows.exe`\r\n- **macOS:** `Musike-Setup-1.5.1-macOS-arm64.dmg` (Apple Silicon) or `-macOS-x64.dmg` (Intel)\r\n- **Linux:** `.deb` or `.AppImage`, each for `x64` and `arm64`\r\n- **Android and Android TV:** `Musike-Setup-1.5.1-Android.apk`\r\n- **iPhone:** `Musike-Setup-1.5.1-iOS.ipa`\r\n- **Docker:** `ghcr.io/ernani1234/musike:1.5.1`\r\n\r\nTo update, install over the previous version. Your playlists and favorites are kept.\r\n\r\n**Full Changelog**: https://github.com/Ernani1234/musike/compare/v1.5.0...v1.5.1",
           "downloadURL": "https://github.com/Ernani1234/musike/releases/download/v1.5.1/Musike-Setup-1.5.1-iOS.ipa",
           "size": 1105525,
@@ -50,8 +49,7 @@
         {
           "version": "1.5.0",
           "buildVersion": "010500",
-          "date": "2026-10-20",
-          "publishedAt": "2026-10-20T02:29:15Z",
+          "date": "2026-10-20T02:29:15Z",
           "localizedDescription": "## What's Changed\r\n* iOS app (Capacitor): platform, native resolving, native audio, lock screen by @fvaha in https://github.com/Ernani1234/musike/pull/7\r\n\r\n\r\n**Full Changelog**: https://github.com/Ernani1234/musike/compare/v1.4.2...v1.5.0",
           "downloadURL": "https://github.com/Ernani1234/musike/releases/download/v1.5.0/Musike-Setup-1.5.0-iOS.ipa",
           "size": 1105130,
