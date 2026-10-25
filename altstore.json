@@ -2,6 +2,7 @@
   "name": "Musike",
   "identifier": "xyz.dnahomelab.musike.source",
   "sourceURL": "https://raw.githubusercontent.com/macblizzard/musike-altstore/main/altstore.json",
+  "schemaVersion": 2,
   "subtitle": "YouTube Music player — unsigned iOS builds",
   "description": "Musike is a free, open-source YouTube Music player by Ernani1234. Standalone on iPhone: no server needed. Builds are the unsigned IPAs published on the upstream release page; SideStore, AltStore, Feather and FlareStore re-sign them with your own Apple ID.",
   "iconURL": "https://raw.githubusercontent.com/Ernani1234/musike/main/mobile/ios/App/App/Assets.xcassets/AppIcon.appiconset/AppIcon-512@2x.png",
