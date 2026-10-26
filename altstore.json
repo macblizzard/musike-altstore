@@ -29,13 +29,23 @@
           "height": 750
         }
       ],
-      "version": "1.5.3",
-      "versionDate": "2026-10-25T14:01:34Z",
-      "versionDescription": "Modded Musike for iOS — Mo's fork of [Ernani1234/musike](https://github.com/Ernani1234/musike), on the upstream v1.5.1 base.\nBuilt from `macblizzard/musike` @ b66c1f3 on GitHub's macOS runner. **Unsigned** — FlareStore/SideStore/AltStore/Sideloadly sign it with your own Apple ID on install.\n\n**1.5.3 — no more silent tail on downloaded tracks.** YouTube's audio streams carry silence past the end of the song. While streaming, the app already stopped at the real length reported by YouTube; a downloaded file had nothing to tell it where the song ends, so a 4-minute track showed 9 minutes with silence after the fourth. The download now records the track's length beside the audio and cuts the padding with a stream copy (no re-encode), and playback stops at the real end either way.\n\nAlso in this build:\n- offline \"Downloaded\" collection that plays with no connection (native downloader — googlevideo has no CORS headers, so the web view can never fetch the bytes itself)\n- lrclib lyrics, fetched on the device\n- audio format ladder (140 -> 139 -> 251 -> 250 -> 249): YouTube refuses individual itags per session, so a refused URL falls through to the next format instead of failing the track\n- iOS background hand-off alongside upstream's media session\n\nNative mode: the backend runs inside the app, so no server or Tailscale is needed.",
-      "downloadURL": "https://github.com/macblizzard/musike-altstore/releases/download/mod-1.5.3-b1/Musike-Mod-1.5.3-iOS-build10503.ipa",
-      "size": 1121780,
+      "version": "1.5.4",
+      "versionDate": "2026-10-26T08:21:44Z",
+      "versionDescription": "AI-assisted playlist creation with OpenCode Go as the default provider and deepseek-v4.1-flash as the default model. Configure it in Settings; the API key stays on the device.",
+      "downloadURL": "https://github.com/macblizzard/musike-altstore/releases/download/mod-1.5.4/Musike-Mod-1.5.4-iOS-build10504.ipa",
+      "size": 1131527,
       "minOSVersion": "15.0",
       "versions": [
+        {
+          "version": "1.5.4",
+          "buildVersion": "10504",
+          "date": "2026-10-26T08:21:44Z",
+          "localizedDescription": "AI-assisted playlist creation with OpenCode Go as the default provider and deepseek-v4.1-flash as the default model. Configure it in Settings; the API key stays on the device.",
+          "downloadURL": "https://github.com/macblizzard/musike-altstore/releases/download/mod-1.5.4/Musike-Mod-1.5.4-iOS-build10504.ipa",
+          "size": 1131527,
+          "minOSVersion": "15.0",
+          "sha256": "f33806a63349a8959c0194fdf962baeede8cb529dff867957643849a5c96b541"
+        },
         {
           "version": "1.5.3",
           "buildVersion": "10503",
