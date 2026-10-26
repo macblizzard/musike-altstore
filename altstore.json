@@ -29,13 +29,23 @@
           "height": 750
         }
       ],
-      "version": "1.5.4",
-      "versionDate": "2026-10-26T08:21:44Z",
-      "versionDescription": "AI-assisted playlist creation with OpenCode Go as the default provider and deepseek-v4.1-flash as the default model. Configure it in Settings; the API key stays on the device.",
-      "downloadURL": "https://github.com/macblizzard/musike-altstore/releases/download/mod-1.5.4/Musike-Mod-1.5.4-iOS-build10504.ipa",
-      "size": 1131527,
+      "version": "1.5.5",
+      "versionDate": "2026-10-26T08:36:20Z",
+      "versionDescription": "Fix: the AI assistant could get stuck on \"No model chosen\" and ask you to pick a provider again. The model now defaults to deepseek-v4.1-flash, is a free-text field, and the provider list loads as soon as a key is entered.",
+      "downloadURL": "https://github.com/macblizzard/musike-altstore/releases/download/mod-1.5.5/Musike-Mod-1.5.5-iOS-build10505.ipa",
+      "size": 1131566,
       "minOSVersion": "15.0",
       "versions": [
+        {
+          "version": "1.5.5",
+          "buildVersion": "10505",
+          "date": "2026-10-26T08:36:20Z",
+          "localizedDescription": "Fix: the AI assistant could get stuck on \"No model chosen\" and ask you to pick a provider again. The model now defaults to deepseek-v4.1-flash, is a free-text field, and the provider list loads as soon as a key is entered.",
+          "downloadURL": "https://github.com/macblizzard/musike-altstore/releases/download/mod-1.5.5/Musike-Mod-1.5.5-iOS-build10505.ipa",
+          "size": 1131566,
+          "minOSVersion": "15.0",
+          "sha256": "d8f3f8ba3362d2fe05b4b6c0a5d056c6408fde091b092d9f99e3941de876429d"
+        },
         {
           "version": "1.5.4",
           "buildVersion": "10504",
